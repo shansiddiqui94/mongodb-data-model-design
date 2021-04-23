@@ -1,13 +1,14 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
-// structure below is denormalized 
+const mongooos = require("mongoose");
+const Schema = mongooos.Schema;
 const Publisher = new Schema(
-    {
-        name: {type: String, required: true},
-        location: {type: String, required: true},
-        url: {type: String, required: true}
-    },
-    {timestamps: true},
-) // being accessed from line 2 
+  {
+    name: { type: String, require: true },
+    location: { type: String, require: true },
+    url: { type: String, require: true },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-module.exports = mongoose.model('publishers', Publisher)
+module.exports = mongooos.model("publishers", Publisher);
